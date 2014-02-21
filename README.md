@@ -1,11 +1,10 @@
 HTML Paper
 =========
 
-HTML paper is a lightweight template for making printable documents in html. The template is similar to what a pdf file can do except with the simplicity of html and css.
+HTML paper is a lightweight template for making printable documents in html. It currently native printing on Chrome and the printed result looks almost the same as when viewed through the browser. The template is similar to what a pdf file can do except with the simplicity of html and css.
 
 ## Demo
 Make sure to see the print preview of the page by pressing print in your browser.
-
 - [Readme page generated from markdown](http://irisli.github.io/html-paper/markdown-paper.html)
 - [Simple static page](http://irisli.github.io/html-paper/static-paper.html)
 
