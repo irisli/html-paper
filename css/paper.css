@@ -18,9 +18,9 @@ html {
  */
 .paper-page {
     /* Unfortunately, setting the page to 85em*110em makes the printing not work.
-       Now, 10em 0.5inches */
-    width: 85em;
-    height: 110em;
+       10em = 0.5inches */
+    width: 42.5em;
+    height: 55em;
     margin: 0 auto;
 
     /* In real life, if one writes past the borders of the paper, the stuff ends

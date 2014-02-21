@@ -10,8 +10,7 @@
 ******************************/
 .paper-page {
     background-color:#fff;
-    box-sizing: border-box;
-    padding: 5em; /* 5em = 0.5inches */
+    padding: 5em; /* 1 em = 0.2 inches; 2.5em = 0.5inches */
 }
 
 /* To make changes appear in the print version, make sure that you are writing
@@ -25,7 +24,7 @@
     }
     .paper-page {
         /* To scale the content in the page shown in the browser, edit this font-size */
-        font-size: 0.5em;
+        font-size: 1em;
         box-shadow: 0 0.25em 1em rgba(0,0,0, 0.2);
     }
 }
@@ -42,7 +41,7 @@ h1 {
 }
 .paper-page > article {
     /* To change the text size in the page (relative to the paper) */
-    font-size: 2em;
+    font-size: 1em;
 }
 .paper-page article *:first-child {
     margin-top: 0;
