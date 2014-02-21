@@ -29,6 +29,11 @@
     }
 }
 
+.paper-page > article {
+    /* To change the text size in the page (relative to the paper) */
+    font-size: 1em;
+}
+
 /******************************
     Content styling
 ******************************/
@@ -38,10 +43,6 @@ html {
 h1 {
   font-size: 2em;
   margin: 0.67em 0;
-}
-.paper-page > article {
-    /* To change the text size in the page (relative to the paper) */
-    font-size: 1em;
 }
 .paper-page article *:first-child {
     margin-top: 0;
