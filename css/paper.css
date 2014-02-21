@@ -1,0 +1,59 @@
+/**
+ * This stylesheet ensures that the .paper-page container is the only thing that is
+ * printed out. The goal is to make the printed copy as close to what is shown
+ * in the .paper-page container.
+ *
+ * The styles here are as barebones as possible and theming is left for another
+ * stylesheet to do.
+ */
+
+html {
+    font-size:18px;
+}
+
+/**
+ * .paper-page is the container that actually holds the page itself. When
+ * printed, the result should be as close to what is shown on the browser
+ * as possible.
+ */
+.paper-page {
+    /* Unfortunately, setting the page to 85em*110em makes the printing not work.
+       Now, 10em 0.5inches */
+    width: 85em;
+    height: 110em;
+    margin: 0 auto;
+
+    /* In real life, if one writes past the borders of the paper, the stuff ends
+       up on the table or writing surface, not the paper. Similarly here,
+       anything that flows outside the page should not be printed. As of right
+       now, there is only support for single pages. */
+    overflow: hidden;
+}
+
+@media print {
+    @page {
+        /* For different page sizes, the width and height of .paper-page also needs to be changed */
+        size: 8.5in 11in; 
+        /* this affects the margin in the printer settings. Set to 0 so that another
+           stylesheet can decide how big they want to margins to be */
+        margin: 0;
+    }
+
+    /* The code below is the magic that makes the printing work. */
+    body {
+        /* In order for the print stylesheet to work in Chrome, the font size must be over 16px */
+        /* A bit hacky, but until a more elegant solution is found, this will be here */
+        font-size: 18px;
+        padding: 0;
+    }
+
+    /* We only want to print out the stuff in .paper-page. Everything else will be
+       gone. Unfortunately, if there is text that is directly a child of <body>
+       and is not wrapped in any tags, it will show. */
+    body > * {
+        display: none;
+    }
+    .paper-page {
+        display: block;
+    }
+}

@@ -1,0 +1,54 @@
+/*
+  This stylesheet only contains information to theme the page. The site
+  layout and printing styles should still fully function without this file.
+
+  This is also a good lightweight starting stylesheet for styling the page.
+*/
+
+/******************************
+    Basic page layout
+******************************/
+.paper-page {
+    background-color:#fff;
+    box-sizing: border-box;
+    padding: 5em; /* 5em = 0.5inches */
+}
+
+/* To make changes appear in the print version, make sure that you are writing
+   css outside @media screen {} */
+@media screen {
+    html {
+        background-color: #ddd;
+    }
+    body {
+        padding: 2em 0;
+    }
+    .paper-page {
+        /* To scale the content in the page shown in the browser, edit this font-size */
+        font-size: 0.5em;
+        box-shadow: 0 0.25em 1em rgba(0,0,0, 0.2);
+    }
+}
+
+/******************************
+    Content styling
+******************************/
+html {
+  font-family: Helvetica, sans-serif;
+}
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+.paper-page > article {
+    /* To change the text size in the page (relative to the paper) */
+    font-size: 2em;
+}
+.paper-page article *:first-child {
+    margin-top: 0;
+}
+/* Real life paper doesn't have hover states for links */
+a {color:inherit;}      /* unvisited link */
+a:visited {color:inherit;}  /* visited link */
+a:hover {color:inherit;}  /* mouse over link */
+a:active {color:inherit;}  /* selected link */
