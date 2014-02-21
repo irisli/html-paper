@@ -19,10 +19,11 @@ The file static-paper.html (and linked css files) is the base template for all t
 - Safari: Printing layout margins
 - IE: Untested
 
-<!--
+
 ## Future Features
 - Multi-page documents (possibly through css regions)
 - Markdown editing of pages
--->
+- Use phantomjs to for server sided generation of pdf from html output
+
 ## License
 Released under the MIT license.
