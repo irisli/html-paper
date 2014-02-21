@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+    <!-- Written in good ol' client side html/css. Such a simple concept doesn't
+       need to be bogged down by complex server sided stuff. -->
+    <!-- Unfortunately, no responsive design here because real life paper résumés
+       aren't responsive either (aww shucks). -->
+    <head>
+        <meta charset="utf-8">
+        <title>Static HTML Paper Page</title>
+        <link rel="stylesheet" href="css/paper.css">
+        <link rel="stylesheet" href="css/base-theme.css">
+        <script src="js/marked.js"></script>
+        <script src="js/jquery-2.1.0.min.js"></script>
+        <style>
+            .paper-page article { opacity: 0; }
+        </style>
+        <script>
+        $(function() {
+            $.ajax({
+                url : "readme.md",
+                dataType: "text",
+                success : function (data) {
+                    $(".paper-page article").html(marked(data));
+                    $(".paper-page article").animate({'opacity':1}, 500);
+                }
+            });
+        });
+        </script>
+    </head>
+    <body>
+        <div class="paper-page">
+            <article>
+            </article>
+        </div>
+    </body>
+</html>
