@@ -10,6 +10,9 @@
 html {
     font-size:18px;
 }
+body {
+    margin: 0;
+}
 
 /**
  * .paper-page is the container that actually holds the page itself. When
@@ -21,6 +24,7 @@ html {
        10em = 0.5inches */
     width: 42.5em;
     height: 55em;
+    box-sizing: border-box;
     margin: 0 auto;
 
     /* In real life, if one writes past the borders of the paper, the stuff ends
@@ -28,6 +32,12 @@ html {
        anything that flows outside the page should not be printed. As of right
        now, there is only support for single pages. */
     overflow: hidden;
+}
+
+.paper-page article {
+    /* If position: absolute; is used on an element in the page inside the content,
+       it will snap to the boundaries of the margins. */
+    position: relative;
 }
 
 @media print {
