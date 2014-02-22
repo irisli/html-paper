@@ -9,28 +9,28 @@
         <title>Markdown Paper Page</title>
         <link rel="stylesheet" href="css/paper.css">
         <link rel="stylesheet" href="css/base-theme.css">
-        <script src="js/marked.js"></script>
-        <script src="js/jquery-2.1.0.min.js"></script>
         <style>
             .paper-page article { opacity: 0; }
         </style>
-        <script>
-        $(function() {
-            $.ajax({
-                url : "readme.md",
-                dataType: "text",
-                success : function (data) {
-                    $(".paper-page article").html(marked(data));
-                    $(".paper-page article").animate({'opacity':1}, 500);
-                }
-            });
-        });
-        </script>
+        <script src="js/marked.js"></script>
+        <script src="js/jquery-2.1.0.min.js"></script>
     </head>
     <body>
         <div class="paper-page">
             <article>
             </article>
         </div>
+        <script>
+        $(function() {
+            $.ajax({
+                url: "readme.md",
+                dataType: "text",
+                success: function(data) {
+                    $(".paper-page article").html(marked(data));
+                    $(".paper-page article").animate({'opacity': 1}, 500);
+                }
+            });
+        });
+        </script>
     </body>
 </html>
