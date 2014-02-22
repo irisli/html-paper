@@ -16,6 +16,10 @@ html {
        simple 850x1100px.
     */
     font-size: 20px;
+
+    /* iOS text size */
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
 }
 body {
     margin: 0;
