@@ -10,7 +10,7 @@
 ******************************/
 .paper-page {
     background-color:#fff;
-    padding: 5em; /* 5em = 1 inch; 2.5em = 0.5 inches */
+    padding: 5em; /* 2.5em = 0.5inches; 5 em = 1 inch;  */
 }
 
 /* To make changes appear in the print version, make sure that you are writing
@@ -31,7 +31,7 @@
 
 .paper-page > article {
     /* To change the text size in the page (relative to the paper) */
-    font-size: 1em;
+    font-size: 0.75em;
 }
 
 /******************************
@@ -47,8 +47,3 @@ h1 {
 .paper-page article *:first-child {
     margin-top: 0;
 }
-/* Real life paper doesn't have doesn't know if you have visited a link */
-a {color:inherit;}      /* unvisited link */
-a:visited {color:inherit;}  /* visited link */
-/* a:hover {color:inherit;}  mouse over link */
-a:active {color:inherit;}  /* selected link */
