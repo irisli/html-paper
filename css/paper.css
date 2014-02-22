@@ -24,6 +24,8 @@ body {
        10em = 0.5inches */
     width: 42.5em;
     height: 55em;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
     box-sizing: border-box;
     margin: 0 auto;
 

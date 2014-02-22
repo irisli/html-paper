@@ -20,7 +20,7 @@ The file `static-paper.html` (and the linked CSS files) is the base template for
 - IE: Untested
 
 ## Known bugs/quirks
-- Chrome only renders font sizes in full numbers and rounds down (14.4px is rendered as 14px). Firefox renders decimal font sizes (14.4px is rendered as 14.4px) and therefore creates a discreptancy in sizing between these two documents. The currently known workaround is to go back to using px sizes and not relative size units.
+- Chrome only renders font sizes in full numbers and rounds down (14.4px is rendered as 14px). Firefox renders decimal font sizes (14.4px is rendered as 14.4px) and therefore creates a discreptancy in sizing between these two documents. The currently known workaround is to use relative sizes that translate into integers until a fix is found. This will ensure forward compatibility.
 
 ## Future Features
 - Multi-page documents (possibly through css regions)
