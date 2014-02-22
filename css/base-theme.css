@@ -10,7 +10,7 @@
 ******************************/
 .paper-page {
     background-color:#fff;
-    padding: 5em; /* 1 em = 0.2 inches; 2.5em = 0.5inches */
+    padding: 5em; /* 5em = 1 inch; 2.5em = 0.5 inches */
 }
 
 /* To make changes appear in the print version, make sure that you are writing
@@ -47,8 +47,8 @@ h1 {
 .paper-page article *:first-child {
     margin-top: 0;
 }
-/* Real life paper doesn't have hover states for links */
+/* Real life paper doesn't have doesn't know if you have visited a link */
 a {color:inherit;}      /* unvisited link */
 a:visited {color:inherit;}  /* visited link */
-a:hover {color:inherit;}  /* mouse over link */
+/* a:hover {color:inherit;}  mouse over link */
 a:active {color:inherit;}  /* selected link */
