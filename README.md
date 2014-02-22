@@ -19,6 +19,8 @@ The file `static-paper.html` (and the linked CSS files) is the base template for
 - Safari: Printing layout margins
 - IE: Untested
 
+## Known bugs/quirks
+- Chrome only renders font sizes in full numbers and rounds down (14.4px is rendered as 14px). Firefox renders decimal font sizes (14.4px is rendered as 14.4px) and therefore creates a discreptancy in sizing between these two documents. The currently known workaround is to go back to using px sizes and not relative size units.
 
 ## Future Features
 - Multi-page documents (possibly through css regions)
