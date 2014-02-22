@@ -15,9 +15,9 @@ The file `static-paper.html` (and the linked CSS files) is the base template for
 
 ## Current Compatibility
 - Chrome: Full layout and printing
-- Firefox: Font sizing smaller than in Chrome. Unable to remove page data (url, title, date) through css. Prints 2 pages for a 1 page document.
-- Safari: Printing layout margins
-- IE: Untested
+- Firefox: Screen rendering is fine. Printing scale is fine. Unable to remove page data (url, title, date) through css. Prints 2 pages for a 1 page document.
+- Safari: Screen rendering is fine. Printing is scaled down if "Print headers and footers" is checked. Prints 2 pages for a 1 page document.
+- IE11: Screen rendering is fine. Printing has margins by default and setting zoom levels in the print options don't help.
 
 ## Known bugs/quirks
 - Chrome only renders font sizes in full numbers and rounds down (14.4px is rendered as 14px). Firefox renders decimal font sizes (14.4px is rendered as 14.4px) and therefore creates a discreptancy in sizing between these two documents. The currently known workaround is to use relative sizes that translate into integers until a fix is found. This will ensure forward compatibility.
