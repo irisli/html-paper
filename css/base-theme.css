@@ -22,7 +22,7 @@ table, caption, tbody, tfoot, thead, tr, th, td {
     outline: 0;
     font-weight: inherit;
     font-style: inherit;
-    font-size: 100%;
+    /*font-size: 100%;*/
     font-family: inherit;
     vertical-align: baseline;
 }
@@ -53,6 +53,8 @@ blockquote, q {
     quotes: "" "";
 }
 
+
+
 /******************************
     Basic page layout
 ******************************/
@@ -76,7 +78,6 @@ blockquote, q {
         box-shadow: 0 0.25em 1em rgba(0,0,0, 0.2);
     }
 }
-
 .paper-page > article {
     /*  To change the base font size in the page, calculate a relative size from
         based off the 20px body font size.
@@ -101,4 +102,11 @@ blockquote, q {
         └──────┴────┴─────────┘ └──────┴────┴─────────┘ 
      */
     font-size: 0.8em;
+}
+
+/******************************
+    General styling
+******************************/
+body {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
