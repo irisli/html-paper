@@ -55,6 +55,8 @@ blockquote, q {
 
 
 
+
+
 /******************************
     Basic page layout
 ******************************/
@@ -105,8 +107,55 @@ blockquote, q {
 }
 
 /******************************
-    General styling
+    Minimalistic General styling
 ******************************/
 body {
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+p, ul, ol{
+    line-height: 1.5em;
+    text-rendering: optimizeLegibility; 
+}
+.paper-page article > *:first-child {
+    margin-top: 0;
+}
+
+ul, ol {
+    list-style-position: inside;
+    padding-left: 1em;
+    text-indent: -1em;
+}
+ul {
+    list-style-type: disc;
+}
+ol {
+    list-style-type: decimal;
+}
+ul ul, ol ul {
+    list-style-type: circle
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: bold;
+    text-rendering: optimizeLegibility;
+    margin-top: 0.5em;
+}
+/* Modular scale 16px @ 1:1.5, 32px @ 1:1.5; Rounded even */
+h1 {
+    font-size: 2em;
+}
+h2 {
+    font-size: 1.5em;
+}
+h3 {
+    font-size: 1.375em;
+}
+h4 {
+    font-size: 1em;
+}
+h5 {
+    font-size: .875em;
+}
+h6 {
+    font-size: .625em;
 }
