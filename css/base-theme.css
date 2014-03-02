@@ -53,10 +53,6 @@ blockquote, q {
     quotes: "" "";
 }
 
-
-
-
-
 /******************************
     Basic page layout
 ******************************/
@@ -114,7 +110,9 @@ body {
 }
 p, ul, ol{
     line-height: 1.5em;
-    text-rendering: optimizeLegibility; 
+    text-rendering: optimizeLegibility;
+    margin-top: 0.75em;
+    margin-bottom: 0.75em;
 }
 .paper-page article > *:first-child {
     margin-top: 0;
