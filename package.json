@@ -1,0 +1,13 @@
+{
+  "name": "html-paper",
+  "version": "1.0.0",
+  "description": "A boilerplate for printer-friendly documents written in html",
+  "main": "pdf.js",
+  "repository": "https://github.com/irisli/html-paper",
+  "author": "Iris Li <github@iris.li>",
+  "license": "MIT",
+  "dependencies": {
+    "http-server": "^0.10.0",
+    "puppeteer": "^0.13.0"
+  }
+}
