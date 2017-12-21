@@ -1,7 +1,7 @@
 HTML Paper
 =========
 
-## Warning: This was written 4 years ago and only supports documents with 1 page. It also doesn't work in all browsers. Only Chrome is actively supported.
+## Warning: This was written 4 years ago and only supports documents with 1 page. It also doesn't work in all browsers. Only Chrome is supported.
 
 HTML Paper is a lightweight template for making printable documents in HTML. It currently supports native printing on Chrome, and the printed result looks almost the same as when viewed through the browser. The template can make pdf-like documents with the simplicity of HTML and CSS.
 
